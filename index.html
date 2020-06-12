@@ -6,9 +6,140 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Frontend Mentor | Scoot Home</title>
 </head>
 <body>
-    
+    <header class="navbar">
+        <img src="./assets/logo.svg" class="logo" alt="Scoot Logo">
+        <div class="links__container">
+            <ul class="navbar__links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <button class="btn">Get Scootin</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1 class="heading-1">Scooter sharing made simple</h1>
+        <p class="hero__content">
+            Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock 
+            it with a tap, and you’re away!
+        </p>
+        <button class="btn">Get Scootin</button>
+        <img src="./assets/patterns/right-arrow.svg" alt="Right arrow" class="hero__pattern--arrow">
+    </section>
+
+    <section class="steps">
+        <div class="step">
+            <img src="./assets/icons/locate.svg" alt="Mobile App Usage Illustration">
+            <div class="step__text">
+                <h4 class="heading-4">Locate with app</h4>
+                <p class="step__content">
+                    Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <img src="./assets/icons/scooter.svg" alt="Scooter Illustration">
+            <div class="step__text">
+                <h4 class="heading-4">Pick your scooter</h4>
+                <p class="step__content">
+                    We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <img src="./assets/icons/ride.svg" alt="Person enjoying Scoot Illustration">
+            <div class="step__text">
+                <h4 class="heading-4">Enjoy the ride</h4>
+                <p class="step__content">
+                    Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="attributes">
+        <div class="attribute attribute--home">
+            <div class="attribute__img">
+                <img src="./assets/images/telemetry.jpg" class="round" alt="Woman using Scoot mobile app">
+            </div>
+            <div class="attribute__text">
+                <h3 class="heading-3">Easy to use riding telemetry</h3>
+                <p class="attribute__content">
+                    The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.
+                </p>
+                <form action="#">
+                    <button type="submit" class="btn">Learn More</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="attribute attribute--home">
+            <div class="attribute__img">
+                <img src="./assets/images/near-you.jpg" class="round" alt="Major city downtown">
+            </div>
+            <div class="attribute__text">
+                <h3 class="heading-3">Coming to a city near you</h3>
+                <p class="attribute__content">
+                    Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.
+                </p>
+                <form action="#">
+                    <button type="submit" class="btn">Learn More</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="attribute attribute--home">
+            <div class="attribute__img">
+                <img src="./assets/images/payments.jpg" class="round" alt="Woman using Scoot mobile app">
+            </div>
+            <div class="attribute__text">
+                <h3 class="heading-3">Zero hassle payments</h3>
+                <p class="attribute__content">
+                    Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.
+                </p>
+                <form action="#">
+                    <button type="submit" class="btn">Learn More</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2 class="heading-2">Sign up and Scoot off today</h2>
+        <div class="cta__buttons">
+            <form action="https://www.apple.com/ios/app-store/">
+                <button type="submit">
+                    <img src="./assets/icons/app-store.svg" alt="Apple App Store">
+                </button>
+            </form>
+            <form action="https://play.google.com/store">
+                <button type="submit">
+                    <img src="./assets/icons/google-play.svg" alt="Google Play Store">
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="./assets/logo-white.svg" alt="Scoot Company Logo">
+        <ul class="footer__links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+        <div class="socials">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
 </body>
 </html>
