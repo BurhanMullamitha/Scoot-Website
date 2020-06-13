@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: $color-dark-navy-1;
+    padding: .5rem 12rem;
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        margin: 0 3rem 0 6rem;
+        font-family: 'Mono Space', monospace;
+
+        li {
+            font-size: 1.5rem;
+            list-style: none;
+            padding: 2.5rem;
+        }
+
+        li a {
+            text-decoration: none;
+            color: $color-dim-grey; 
+            transition: all .2s;
+        }
+
+        li a:hover {
+            color: $color-dark-yellow;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        margin-left: auto;
+        
+        li {
+            list-style: none;
+            padding: 1rem;
+        }
+
+        li a {
+            text-decoration: none;
+            color: $color-dark-yellow;
+            font-size: 2.2rem;
+        }
+
+    }
+
+}
