@@ -1,0 +1,115 @@
+.attribute {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    & > * {
+        width: 45%;
+    }
+
+    &__text {
+        color: $color-dark-navy-2;
+    }
+
+    &__content {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 2rem 0;
+        color: $color-dim-grey; 
+    }
+
+    &__img {
+        max-width: 100%;
+        .round {
+            border-radius: 50%;
+        }
+    }
+
+    &::after {
+        content: '';
+        background-image: url(../assets/patterns/circle.svg);
+        background-repeat: no-repeat;
+        z-index: -1;
+        position: absolute;
+    }
+
+    &:nth-of-type(odd) {
+        
+        &::after {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: -42.5rem;
+            background-position: center right;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            transform: translateX(-5rem);
+        }
+    }
+
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        &::after {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: -42.5rem;
+            background-position: center left;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../assets/patterns/right-arrow.svg);
+            background-position: top left;
+            background-repeat: no-repeat;
+            top: 0;
+            bottom: 0;
+            left: -20.5rem;
+            right: 0;
+            z-index: 2;
+        }
+
+        img {
+            transform: translateX(5rem);
+        }
+    }
+
+    &--home {
+        
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../assets/patterns/left-downward-arrow.svg);
+            background-position: right;
+            background-repeat: no-repeat;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        &:nth-of-type(1) {
+            &::before {
+                right: -20rem;
+                bottom: -25rem;
+            }
+        }
+
+        &:nth-of-type(3) {
+            &::before {
+                right: -55rem;
+                top: -15rem;
+            }
+        }
+
+    }
+
+}
