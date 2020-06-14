@@ -14,6 +14,54 @@ body {
 body {
   font-family: 'Lexend Deca', sans-serif; }
 
+.heading-1 {
+  font-size: 6rem;
+  font-family: 'Space Mono', monospace; }
+
+.hero {
+  position: relative;
+  background-image: url(/assets/images/home-hero-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 12rem 20vw;
+  color: #fff; }
+  .hero > * {
+    max-width: 60rem; }
+  .hero h1 {
+    position: relative;
+    right: 10rem; }
+  .hero__content {
+    max-width: 40rem;
+    font-size: 1.5rem;
+    margin: 3rem 0 5rem 0; }
+  .hero__pattern--arrow {
+    position: absolute;
+    top: 55%;
+    bottom: 0;
+    left: calc(20vw + 45.5rem); }
+  .hero::before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/patterns/line.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 55%;
+    bottom: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 17vw; }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(/assets/patterns/white-circles.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 75%;
+    transform: translateX(3rem); }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -70,7 +118,10 @@ body {
     .footer__socials li a {
       text-decoration: none;
       color: #fcb72c;
-      font-size: 2.2rem; }
+      font-size: 2.2rem;
+      transition: all .2s; }
+    .footer__socials li a:hover {
+      color: #fff; }
 
 .btn {
   background-color: #fcb72c;
