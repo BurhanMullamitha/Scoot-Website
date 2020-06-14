@@ -1,0 +1,19 @@
+.step {
+    font-size: 1.5rem;
+    width: 30%;
+    padding: 1.5rem;
+
+    &__text {
+        h4 {
+            color: $color-dark-navy-1;
+            margin: 1.25rem 0;
+        }
+        
+    }
+
+    &__content {
+        color: $color-dim-grey;  
+        line-height: 2.4rem;
+    }
+
+}

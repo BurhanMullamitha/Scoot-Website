@@ -15,7 +15,11 @@ body {
   font-family: 'Lexend Deca', sans-serif; }
 
 .heading-1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
+  font-family: 'Space Mono', monospace; }
+
+.heading-4 {
+  font-size: 2.4rem;
   font-family: 'Space Mono', monospace; }
 
 .hero {
@@ -23,20 +27,23 @@ body {
   background-image: url(/assets/images/home-hero-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 12rem 20vw;
+  padding: 14rem 20vw;
   color: #fff; }
   .hero > * {
     max-width: 60rem; }
   .hero h1 {
     position: relative;
-    right: 10rem; }
+    right: 10rem;
+    line-height: 5.5rem;
+    margin-bottom: 5rem; }
   .hero__content {
     max-width: 40rem;
     font-size: 1.5rem;
-    margin: 3rem 0 5rem 0; }
+    margin: 3rem 0 5rem 0;
+    line-height: 2.5rem; }
   .hero__pattern--arrow {
     position: absolute;
-    top: 55%;
+    top: 50%;
     bottom: 0;
     left: calc(20vw + 45.5rem); }
   .hero::before {
@@ -45,7 +52,7 @@ body {
     background-image: url(/assets/patterns/line.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    top: 55%;
+    top: 50%;
     bottom: 0;
     left: 0;
     height: 1.5rem;
@@ -59,8 +66,24 @@ body {
     left: 0;
     background-image: url(/assets/patterns/white-circles.svg);
     background-repeat: no-repeat;
-    background-position: 100% 75%;
+    background-position: 100% 69%;
     transform: translateX(3rem); }
+
+.steps {
+  position: relative;
+  padding: 10rem 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .steps::before {
+    content: '';
+    position: absolute;
+    background-color: #e6edf4;
+    width: 70%;
+    height: 1rem;
+    left: 0;
+    top: 16rem;
+    z-index: -1; }
 
 .navbar {
   display: flex;
@@ -81,7 +104,7 @@ body {
     .navbar__links li {
       font-size: 1.5rem;
       list-style: none;
-      padding: 2.5rem; }
+      padding: 1.5rem 2.5rem; }
     .navbar__links li a {
       text-decoration: none;
       color: #929baa;
@@ -123,12 +146,25 @@ body {
     .footer__socials li a:hover {
       color: #fff; }
 
+.step {
+  font-size: 1.5rem;
+  width: 30%;
+  padding: 1.5rem; }
+  .step__text h4 {
+    color: #333a44;
+    margin: 1.25rem 0; }
+  .step__content {
+    color: #929baa;
+    line-height: 2.4rem; }
+
 .btn {
   background-color: #fcb72c;
-  padding: 1.75rem 4.5rem;
+  padding: 1.5rem 4rem;
   font-size: 1.4rem;
   color: #fff;
-  font-family: 'Mono Space', monospace; }
+  font-family: 'Mono Space', monospace;
+  border: 3px solid #fcb72c;
+  cursor: pointer; }
   .btn:hover {
     background-color: transparent;
     color: #fcb72c;
