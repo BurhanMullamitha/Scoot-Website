@@ -9,19 +9,26 @@
         width: 45%;
     }
 
+    &:not(:last-child) {
+        margin-bottom: 10rem;
+    }
+
     &__text {
         color: $color-dark-navy-2;
     }
 
     &__content {
         font-size: 1.5rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
         margin: 2rem 0;
         color: $color-dim-grey; 
     }
 
     &__img {
-        max-width: 100%;
+
+        img {
+            max-width: 100%;
+        }
         .round {
             border-radius: 50%;
         }
