@@ -95,15 +95,10 @@ body {
     top: 16rem;
     z-index: -1; }
 
-.attributes {
-  margin-top: -5rem;
-  padding: 10rem 8vw;
-  overflow: hidden; }
-
 .navbar {
   display: flex;
   align-items: center;
-  padding: 1rem 12vw; }
+  padding: 1rem 8vw; }
   .navbar__nav {
     display: flex;
     align-items: center;
@@ -195,6 +190,41 @@ body {
     left: 0;
     right: -15rem; }
 
+.banner {
+  padding: 3.5rem;
+  margin-bottom: 5rem;
+  position: relative; }
+  .banner h2 {
+    padding-left: 10rem;
+    color: #fff; }
+  .banner::after {
+    content: '';
+    position: absolute;
+    background-image: url(../assets/patterns/white-circles.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -3rem;
+    z-index: 1; }
+  .banner--about::before {
+    content: '';
+    position: absolute;
+    background-image: url(../assets/images/about-hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1; }
+
+.attributes {
+  margin-top: -5rem;
+  padding: 10rem 8vw;
+  overflow: hidden; }
+
 .attribute {
   display: flex;
   flex-direction: row;
@@ -253,7 +283,7 @@ body {
       z-index: 2; }
     .attribute:nth-of-type(even) img {
       transform: translateX(5rem); }
-  .attribute--home::before {
+  .attribute--home:nth-of-type(odd)::before {
     content: '';
     position: absolute;
     background-image: url(../assets/patterns/left-downward-arrow.svg);
@@ -270,6 +300,17 @@ body {
   .attribute--home:nth-of-type(3)::before {
     right: -55rem;
     top: -15rem; }
+  .attribute--about:nth-of-type(odd)::before {
+    content: '';
+    position: absolute;
+    background-image: url(../assets/patterns/left-upward-arrow.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: -25rem;
+    left: 0;
+    right: -20rem;
+    z-index: 2; }
 
 .step {
   font-size: 1.5rem;
