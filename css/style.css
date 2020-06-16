@@ -338,3 +338,43 @@ body {
     background-color: transparent;
     color: #fcb72c;
     border: 3px solid currentColor; }
+
+.values {
+  text-align: center;
+  padding: 0 10rem;
+  justify-content: center; }
+  .values h2 {
+    color: #4a5668;
+    padding: 4rem; }
+  .values__container {
+    display: flex; }
+
+.value {
+  width: 33%;
+  padding: 2rem;
+  text-align: center; }
+  .value__img {
+    position: relative;
+    display: flex;
+    justify-content: center; }
+    .value__img img {
+      max-width: 100%; }
+    .value__img .round {
+      border-radius: 50%; }
+  .value__number {
+    position: absolute;
+    padding: 3.5rem 4rem;
+    background-color: #fcb72c;
+    color: #4a5668;
+    font-size: 2.4rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border-radius: 50%;
+    bottom: -2.5rem; }
+  .value__text {
+    margin: 4rem 0; }
+  .value__content {
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #929baa; }

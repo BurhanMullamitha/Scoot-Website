@@ -1,0 +1,58 @@
+.values {
+    text-align: center;
+    padding: 0 10rem;
+    justify-content: center;
+
+    h2 {
+        color: $color-dark-navy-2;
+        padding: 4rem;
+    }
+
+    &__container {
+        display: flex;
+    }
+}
+
+.value {
+    width: 33%; 
+
+    padding: 2rem;
+    text-align: center;
+    
+
+    &__img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+        }
+        .round {
+            border-radius: 50%;
+        }
+    }
+
+    &__number {
+        position: absolute;
+        padding: 3.5rem 4rem;
+        background-color: $color-dark-yellow;
+        color: $color-dark-navy-2;
+        font-size: 2.4rem;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        border-radius: 50%;
+        bottom: -2.5rem;
+    }
+
+    &__text {
+        margin: 4rem 0;
+    }
+
+    &__content {
+        padding: 2rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: $color-dim-grey;
+    }
+}
