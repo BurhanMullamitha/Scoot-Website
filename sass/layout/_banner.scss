@@ -19,20 +19,5 @@
         left: 0;
         right: -3rem;
         z-index: 1;
-    }
-
-    &--about {
-        &::before {
-            content: '';
-            position: absolute;
-            background-image: url(../assets/images/about-hero-desktop.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0; 
-            z-index: -1;
-        }
-    }
+    }   
 }

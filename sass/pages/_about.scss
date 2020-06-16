@@ -1,0 +1,35 @@
+.banner {
+    &--about {
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../assets/images/about-hero-desktop.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0; 
+            z-index: -1;
+        }
+    }
+}
+
+.attribute {
+    &--about {
+        &:nth-of-type(odd) {
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../assets/patterns/left-upward-arrow.svg);
+                background-position: right;
+                background-repeat: no-repeat;
+                top: 0;
+                bottom: -25rem;
+                left: 0;
+                right: -20rem;
+                z-index: 2;
+            }
+        }
+    }
+}

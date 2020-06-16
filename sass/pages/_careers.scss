@@ -1,0 +1,33 @@
+.banner {
+    &--careers {
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../assets/images/careers-locations-hero-desktop.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0; 
+            z-index: -1;
+        }
+    }
+}
+
+.attribute {
+    &--careers {
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../assets/patterns/left-downward-arrow.svg);
+            background-position: right;
+            background-repeat: no-repeat;
+            top: 0;
+            bottom: -20rem;
+            left: 0;
+            right: -20.5rem;
+            z-index: 2;
+        }
+    }
+}
