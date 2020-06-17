@@ -182,6 +182,68 @@ body {
 .btn-apply {
   width: 18rem; }
 
+.banner--locations::before {
+  content: '';
+  position: absolute;
+  background-image: url(../assets/images/careers-locations-hero-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1; }
+
+.map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 8rem 8vw;
+  margin: auto;
+  max-width: calc(100% - 16vw); }
+  .map__img {
+    max-width: 100%; }
+  .map__location {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 8vw;
+    height: 100%;
+    width: calc(100% - 16vw); }
+    .map__location li {
+      height: 6rem;
+      width: 15rem;
+      background-color: #fcb72c;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #4a5668;
+      font-weight: 700;
+      font-family: 'Space Mono', monospace; }
+      .map__location li::after {
+        content: '';
+        position: absolute;
+        background-color: #fcb72c;
+        height: 2rem;
+        width: 2rem;
+        bottom: 0;
+        right: 3.5rem;
+        transform: rotateZ(45deg) translateY(1.5rem); }
+    .map__location--ny {
+      top: 22%;
+      left: 14%; }
+    .map__location--london {
+      top: 15%;
+      left: 35%; }
+    .map__location--yokohama {
+      top: 24%;
+      right: 10%; }
+    .map__location--jakarta {
+      top: 47%;
+      right: 18%; }
+
 .navbar {
   display: flex;
   align-items: center;
