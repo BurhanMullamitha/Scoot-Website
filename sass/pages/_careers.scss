@@ -31,3 +31,32 @@
         }
     }
 }
+
+.jobs {
+    padding: 2rem 8vw 12rem 8vw;
+}
+
+.job {
+    display: flex;
+    align-items: center;
+    background-color: $color-light-grey;
+    padding: 2rem 3.5rem;
+
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    &__description {
+        margin-right: auto;
+        color: $color-dark-navy-2;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+}
+
+.btn-apply {
+    width: 18rem;
+}

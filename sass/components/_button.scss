@@ -1,14 +1,15 @@
 .btn {
-    background-color: $color-dark-yellow;
+    outline:none;
+    position: relative;
     padding: 1.5rem 4rem;
-    font-size: 1.4rem;
+    background-color: $color-dark-yellow;
     color: $color-white;
     font-family: 'Mono Space', monospace;
+    font-size: 1.4rem;
     border: 3px solid $color-dark-yellow;
     cursor: pointer;
-    transition: all .2s;
     z-index: 2;
-    position: relative;
+    transition: all .2s;
 
     &:hover {
         background-color: transparent;

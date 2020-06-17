@@ -163,6 +163,25 @@ body {
   right: -20.5rem;
   z-index: 2; }
 
+.jobs {
+  padding: 2rem 8vw 12rem 8vw; }
+
+.job {
+  display: flex;
+  align-items: center;
+  background-color: #e6edf4;
+  padding: 2rem 3.5rem; }
+  .job:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .job__description {
+    margin-right: auto;
+    color: #4a5668; }
+  .job p {
+    font-size: 1.5rem; }
+
+.btn-apply {
+  width: 18rem; }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -307,8 +326,8 @@ body {
     content: '';
     background-image: url(../assets/patterns/circle.svg);
     background-repeat: no-repeat;
-    z-index: -1;
-    position: absolute; }
+    position: absolute;
+    z-index: -1; }
   .attribute:nth-of-type(odd)::after {
     top: 0;
     bottom: 0;
@@ -353,16 +372,17 @@ body {
     line-height: 2.4rem; }
 
 .btn {
-  background-color: #fcb72c;
+  outline: none;
+  position: relative;
   padding: 1.5rem 4rem;
-  font-size: 1.4rem;
+  background-color: #fcb72c;
   color: #fff;
   font-family: 'Mono Space', monospace;
+  font-size: 1.4rem;
   border: 3px solid #fcb72c;
   cursor: pointer;
-  transition: all .2s;
   z-index: 2;
-  position: relative; }
+  transition: all .2s; }
   .btn:hover {
     background-color: transparent;
     color: #fcb72c;
