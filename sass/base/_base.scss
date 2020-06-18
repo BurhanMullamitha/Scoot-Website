@@ -12,6 +12,8 @@ html {
 
 body {
     box-sizing: border-box;
+    max-width: 190em;
+    margin: auto;
     
     & > * {
         overflow: hidden;
