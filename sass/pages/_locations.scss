@@ -72,11 +72,9 @@
     padding: 0rem 8vw 5rem 8vw;
     display: grid;
     grid-template-columns: minmax(35rem, 1fr) 3fr 1fr;
-    // grid-template-columns: 1fr;
     grid-gap: 4rem;
     align-items: center;
     justify-items: center;
-    // justify-content: center;
 
     &__content {
         font-size: 1.5rem;
