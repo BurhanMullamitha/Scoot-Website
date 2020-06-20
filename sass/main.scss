@@ -1,19 +1,22 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
 @import 'base/base';
 @import 'base/typography';
-@import 'abstracts/variables';
-
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/careers';
-@import 'pages/locations';
-
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/cta';
-@import 'layout/banner';
 
 @import 'components/attribute';
 @import 'components/step';
 @import 'components/button';
 @import 'components/value';
 @import 'components/faq';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/cta';
+@import 'layout/banner';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/careers';
+@import 'pages/locations';
+

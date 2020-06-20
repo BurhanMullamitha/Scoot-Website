@@ -6,10 +6,19 @@
     padding: 10rem 8vw;
     background-color: $color-dark-navy-2;
 
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        text-align: center;
+    }
+
     h2 {
         color: $color-white;
         max-width: 50rem;
         line-height: 5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 5rem;
+        }
     }
 
     &__buttons {

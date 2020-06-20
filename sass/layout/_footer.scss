@@ -4,6 +4,16 @@
     background-color: $color-dark-navy-1;
     padding: .5rem 12rem;
 
+    @media only screen and (max-width: $bp-small) {
+        padding: .5rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5rem;
+    }
+
     &__links {
         display: flex;
         flex-direction: row;
@@ -14,6 +24,10 @@
             font-size: 1.5rem;
             list-style: none;
             padding: 2.5rem;
+
+            @media only screen and (max-width: $bp-smallest) {
+                padding: 1.25rem;
+            }
         }
 
         li a {
@@ -24,6 +38,15 @@
 
         li a:hover {
             color: $color-dark-yellow;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin-left: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            flex-direction: column;
+            margin-top: 3rem;
         }
     }
 
@@ -41,10 +64,19 @@
             color: $color-dark-yellow;
             font-size: 2.2rem;
             transition: all .2s;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 3rem;
+            }
         }
 
         li a:hover {
             color: $color-white;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin: auto;
+            padding: 3rem 5rem;
         }
 
     }
