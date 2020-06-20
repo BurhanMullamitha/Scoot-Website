@@ -29,6 +29,21 @@
                 left: 0;
                 right: -20rem;
                 z-index: 2;
+
+                @media only screen and (max-width: $bp-medium) {
+                    bottom: -10rem;
+                    right: -28rem;
+                }
+
+                @media only screen and (max-width: $bp-small) {
+                    bottom: -8rem;
+                    right: -37rem;
+                }
+
+                @media only screen and (max-width: $bp-smallest) {
+                    bottom: 0rem;
+                    right: -50rem;
+                }
             }
         }
     }

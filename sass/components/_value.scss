@@ -1,7 +1,15 @@
 .values {
     text-align: center;
-    padding: 0 10rem;
+    padding: 0 8vw;
     justify-content: center;
+
+    @media only screen and (max-width:$bp-large) {
+        padding: 0 3vw;
+    }
+
+    @media only screen and (max-width:$bp-smallest) {
+        padding: 0;
+    }
 
     h2 {
         color: $color-dark-navy-2;
@@ -10,6 +18,10 @@
 
     &__container {
         display: flex;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
     }
 }
 
@@ -19,17 +31,37 @@
     padding: 2rem;
     text-align: center;
     
+    @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+        display: flex;
+        padding: 2.5rem;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-direction: column;
+        margin-bottom: 0rem;
+        padding: 0;
+    }
 
     &__img {
         position: relative;
         display: flex;
         justify-content: center;
 
-        img {
-            max-width: 100%;
-        }
         .round {
             border-radius: 50%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 0 0 50%;
+
+            border-right: 1px solid $color-dim-grey;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            border: none;
         }
     }
 
@@ -47,6 +79,20 @@
 
     &__text {
         margin: 4rem 0;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 0 0 50%;
+            margin: 0 5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex: 0 0 50%;
+            margin: 0 2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin: 4rem;
+        }
     }
 
     &__content {
@@ -54,5 +100,13 @@
         font-size: 1.5rem;
         line-height: 2.5rem;
         color: $color-dim-grey;
+
+        @media only screen and (max-width: $bp-large) {
+            padding: 1.25rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: .5rem;
+        }
     }
 }

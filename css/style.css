@@ -204,26 +204,52 @@ body {
 
 .values {
   text-align: center;
-  padding: 0 10rem;
+  padding: 0 8vw;
   justify-content: center; }
+  @media only screen and (max-width: 68.75em) {
+    .values {
+      padding: 0 3vw; } }
+  @media only screen and (max-width: 35em) {
+    .values {
+      padding: 0; } }
   .values h2 {
     color: #4a5668;
     padding: 4rem; }
   .values__container {
     display: flex; }
+    @media only screen and (max-width: 55em) {
+      .values__container {
+        flex-direction: column; } }
 
 .value {
   width: 33%;
   padding: 2rem;
   text-align: center; }
+  @media only screen and (max-width: 55em) {
+    .value {
+      width: 100%;
+      display: flex;
+      padding: 2.5rem;
+      align-items: center;
+      margin-bottom: 5rem; } }
+  @media only screen and (max-width: 35em) {
+    .value {
+      flex-direction: column;
+      margin-bottom: 0rem;
+      padding: 0; } }
   .value__img {
     position: relative;
     display: flex;
     justify-content: center; }
-    .value__img img {
-      max-width: 100%; }
     .value__img .round {
       border-radius: 50%; }
+    @media only screen and (max-width: 55em) {
+      .value__img {
+        flex: 0 0 50%;
+        border-right: 1px solid #929baa; } }
+    @media only screen and (max-width: 35em) {
+      .value__img {
+        border: none; } }
   .value__number {
     position: absolute;
     padding: 3.5rem 4rem;
@@ -236,16 +262,42 @@ body {
     bottom: -2.5rem; }
   .value__text {
     margin: 4rem 0; }
+    @media only screen and (max-width: 55em) {
+      .value__text {
+        flex: 0 0 50%;
+        margin: 0 5rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .value__text {
+        flex: 0 0 50%;
+        margin: 0 2rem; } }
+    @media only screen and (max-width: 35em) {
+      .value__text {
+        margin: 4rem; } }
   .value__content {
     padding: 2rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
     color: #929baa; }
+    @media only screen and (max-width: 68.75em) {
+      .value__content {
+        padding: 1.25rem; } }
+    @media only screen and (max-width: 35em) {
+      .value__content {
+        padding: .5rem; } }
 
 .faq {
   padding: 5rem 8vw;
   padding-top: 0;
   color: #4a5668; }
+  @media only screen and (max-width: 55em) {
+    .faq {
+      padding: 5rem 5vw; } }
+  @media only screen and (max-width: 43.75em) {
+    .faq {
+      padding: 3rem; } }
+  @media only screen and (max-width: 35em) {
+    .faq {
+      padding: 1rem; } }
   .faq h2 {
     text-align: center; }
   .faq__container {
@@ -255,6 +307,13 @@ body {
     padding: 3rem; }
     .faq__container h3 {
       flex: 0 0 35%; }
+      @media only screen and (max-width: 55em) {
+        .faq__container h3 {
+          text-align: center;
+          padding: 3rem; } }
+    @media only screen and (max-width: 55em) {
+      .faq__container {
+        flex-direction: column; } }
   .faq__question {
     display: flex;
     flex-direction: row;
@@ -432,15 +491,18 @@ body {
       color: #fcb72c;
       font-size: 2.2rem;
       transition: all .2s; }
-      @media only screen and (max-width: 43.75em) {
+      @media only screen and (max-width: 35em) {
         .footer__socials li a {
           font-size: 3rem; } }
     .footer__socials li a:hover {
       color: #fff; }
     @media only screen and (max-width: 43.75em) {
       .footer__socials {
+        padding: 2rem 0; } }
+    @media only screen and (max-width: 35em) {
+      .footer__socials {
         margin: auto;
-        padding: 3rem 5rem; } }
+        padding: 1rem 0; } }
 
 .cta {
   display: flex;
@@ -484,12 +546,17 @@ body {
     right: -15rem; }
 
 .banner {
-  padding: 3.5rem;
+  padding: 3.5rem 8vw;
   margin-bottom: 5rem;
   position: relative; }
+  @media only screen and (max-width: 55em) {
+    .banner {
+      padding: 3.5rem 5vw; } }
   .banner h2 {
-    padding-left: 10rem;
     color: #fff; }
+    @media only screen and (max-width: 35em) {
+      .banner h2 {
+        text-align: center; } }
   .banner::after {
     content: '';
     position: absolute;
@@ -501,6 +568,9 @@ body {
     left: 0;
     right: -3rem;
     z-index: 1; }
+    @media only screen and (max-width: 35em) {
+      .banner::after {
+        display: none; } }
 
 .hero {
   position: relative;
@@ -706,6 +776,18 @@ body {
   left: 0;
   right: -20rem;
   z-index: 2; }
+  @media only screen and (max-width: 55em) {
+    .attribute--about:nth-of-type(odd)::before {
+      bottom: -10rem;
+      right: -28rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .attribute--about:nth-of-type(odd)::before {
+      bottom: -8rem;
+      right: -37rem; } }
+  @media only screen and (max-width: 35em) {
+    .attribute--about:nth-of-type(odd)::before {
+      bottom: 0rem;
+      right: -50rem; } }
 
 .banner--careers::before {
   content: '';
