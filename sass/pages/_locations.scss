@@ -9,7 +9,7 @@
             top: 0;
             bottom: 0;
             right: 0;
-            left: 0; 
+            left: 0;
             z-index: -1;
         }
     }
@@ -19,13 +19,46 @@
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 8rem 8vw;
-    margin: auto;
-    max-width: calc(100% - 16vw);
+    padding: 8rem 0;
+    margin: 0 auto;
+    max-width: calc(80rem + 16vw);
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
 
     &__img {
-        max-width: 100%;
+        
+        &--desktop {
+            display: block;
+
+            @media only screen and (max-width: $bp-small) {
+                display: none;
+            }
+        }
+
+        &--mobile {
+            display: none;
+
+            @media only screen and (max-width: $bp-small) {
+                display: block;
+            }
+        }
     }
+
+    &__container {
+        width: max-content;
+
+        img {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: auto;
+            margin-bottom: 5rem;
+        }
+    }    
     
     &__location {
         position: absolute;
@@ -34,12 +67,18 @@
         left: 8vw;
         height: 100%;
         width: calc(100% - 16vw);
+        max-width: 80rem;
+
+        @media only screen and (max-width: $bp-small) {
+            position: relative;
+            flex-direction: column;
+        }
 
         li {
+            position: absolute;
             height: 6rem;
             width: 15rem;
             background-color: $color-dark-yellow;
-            position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -52,19 +91,76 @@
                 content: '';
                 position: absolute;
                 background-color: $color-dark-yellow;
-                // background-color: black;
                 height: 2rem;
                 width: 2rem;
                 bottom: 0;
                 right: 3.5rem;
                 transform: rotateZ(45deg) translateY(1.5rem);
+
+                @media only screen and (max-width: $bp-small) {
+                    display: none;
+                }
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                position: relative;
+                width: 90%;
+                margin: 1rem auto;
+                left: auto;
+                right: auto;
+                padding: 5rem;
+                background-color: $color-light-yellow;
             }
         }
 
-        &--ny { top: 22%; left: 14%; }
-        &--london { top: 15%; left: 35%; }
-        &--yokohama { top: 24%; right: 10%; }
-        &--jakarta { top: 47%; right: 18%; }
+        &--ny { 
+            top: 22%;
+
+            @media only screen and (max-width: 81.25em) {  //1300px
+                left: 2%; 
+            }
+
+            @media only screen and (max-width: 68.75em) {  //1100px
+                top: 20%;
+                left: 4%;
+            }
+        }
+        
+        &--london { 
+            top: 15%; left: 30%; 
+
+            @media only screen and (max-width: 81.25em) {  //1300px
+                left: 31%;
+            }
+        }
+
+        &--yokohama { 
+            top: 24%; right: -5%; 
+
+            @media only screen and (max-width: 100em) {  //1600px
+                right: -4%;
+            }
+
+            @media only screen and (max-width: 81.25em) {  //1300px
+                right: -2%;
+            }
+
+            @media only screen and (max-width: 68.75em) {  //1100px
+                top:23%; right: -1%;
+            }
+        }
+
+        &--jakarta { 
+            top: 47%; right: 4%; 
+
+            @media only screen and (max-width: 100em) {  // 1600px
+                right: 5%;
+            }
+
+            @media only screen and (max-width: 81.25em) {  //1300px
+                right: 7%;
+            }
+        }
     }
 }
 
@@ -74,11 +170,31 @@
     grid-template-columns: minmax(35rem, 1fr) 3fr 1fr;
     grid-gap: 4rem;
     align-items: center;
-    justify-items: center;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        color: $color-dark-navy-2;
+    }
 
     &__content {
         font-size: 1.5rem;
         color: $color-dim-grey;
+
+        @media only screen and (max-width: $bp-large) {
+            padding: 0 10rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0 2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 0;
+        }
     }
 }
 
