@@ -389,6 +389,7 @@ body {
         overflow: hidden;
         padding: 10rem 0;
         justify-content: space-between;
+        transition: all .7s;
         transform: translateX(-100vw); }
         .navbar__nav.active {
           transform: translateX(0); } }
@@ -812,20 +813,43 @@ body {
   left: 0;
   right: -20.5rem;
   z-index: 2; }
+  @media only screen and (max-width: 55em) {
+    .attribute--careers::before {
+      bottom: -5rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .attribute--careers::before {
+      bottom: 5rem;
+      right: -35rem; } }
+  @media only screen and (max-width: 35em) {
+    .attribute--careers::before {
+      bottom: 5rem;
+      right: -50rem; } }
 
 .jobs {
-  padding: 2rem 8vw 12rem 8vw; }
+  padding: 2rem 8vw 8rem 8vw; }
+  @media only screen and (max-width: 43.75em) {
+    .jobs {
+      padding: 2rem 5vw 5rem 5vw; } }
 
 .job {
   display: flex;
   align-items: center;
   background-color: #e6edf4;
   padding: 2rem 3.5rem; }
+  @media only screen and (max-width: 35em) {
+    .job {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem; } }
   .job:not(:last-child) {
     margin-bottom: 1.5rem; }
   .job__description {
     margin-right: auto;
     color: #4a5668; }
+    @media only screen and (max-width: 35em) {
+      .job__description {
+        margin: 2rem;
+        margin-top: 0; } }
   .job p {
     font-size: 1.5rem; }
 

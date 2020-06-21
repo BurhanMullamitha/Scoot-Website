@@ -47,6 +47,7 @@
             overflow: hidden;
             padding: 10rem 0;
             justify-content: space-between;
+            transition: all .7s;
             transform: translateX(-100vw);
 
             &.active {
